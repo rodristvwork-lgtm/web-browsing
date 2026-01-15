@@ -1,0 +1,167 @@
+{
+  "start_time_cmd": "return window.performance.timing.navigationStart",
+  "end_time_cmd": "return window.performance.timing.loadEventEnd",
+  "dom_complete_cmd": "return window.performance.timing.domContentLoadedEventEnd",
+  "domInteractive_cmd": "return window.performance.timing.domInteractive",
+  "response_start_cmd": "return window.performance.timing.responseStart",
+  "first_contentful_paint": "return window.performance.getEntriesByName('first-contentful-paint')[0].startTime;",
+  "prova": "var script = document.createElement('script'); script.src = 'https://unpkg.com/web-vitals@2.1.2/dist/web-vitals.iife.js'; document.head.appendChild(script); var fc = 0; webVitals.getFCP(function(data) {fc = data.value;}); return fc;",
+  "total_blocking_time": "var tot = 0; window.performance.getEntriesByType('resource').forEach(function (resource) {if (resource['duration'] > 50) tot = tot + resource['duration']}); return tot",
+  "results_file_name": "results/{hostname}_{ts}_results.csv",
+  "folder_result_done": "results/already_on_dropbox",
+  "input_file_path": "input.json",
+  "log_file_path": "loading.log",
+  "sleep_before_load": 10,
+  "failed_test_value": -1,
+  "website_loading_timeout": 60,
+  "geckodriver_path": "geckodriver",
+  "token_dropbox": "XFotscImOosAAAAAAAAAAbqc0iP9FO7krwS3AYwM7u7uU5jcgHSDr9l5YY7C-ZK9",
+  "modem": {
+    "terminal_info": "http://192.168.0.1/api/system/terminal_info",
+    "association": "http://192.168.0.1/api/home/status/association",
+    "cur_tune_status": "http://192.168.0.1/api/install/cur_tune_status",
+    "scan_progress": "http://192.168.0.1/api/install/scan_progress"
+  },
+  "host": {
+    "default_node_name": "nodeNameNA"
+  },
+  "update_data": {
+    "static_ip": [
+      "172.30.30.67",
+      "172.30.30.66",
+      "172.30.30.65",
+      "172.30.30.64",
+      "172.30.30.62",
+      "172.30.30.61",
+      "172.30.30.60",
+      "172.30.30.59",
+      "172.30.30.58",
+      "172.30.30.57",
+      "172.30.30.55",
+      "172.30.30.54",
+      "172.30.30.53",
+      "172.30.30.63",
+      "172.30.38.53",
+      "172.30.38.55",
+      "172.30.38.58",
+      "172.30.10.66",
+      "172.30.10.68",
+      "172.30.10.69",
+      "172.30.10.71",
+      "172.30.10.70",
+      "172.30.38.69",
+      "172.30.38.71",
+      "172.30.38.74",
+      "172.30.14.53",
+      "172.30.14.54",
+      "172.30.14.55",
+      "172.30.14.57",
+      "172.30.14.58",
+      "172.30.14.59",
+      "172.30.14.60",
+      "172.30.14.61",
+      "172.30.14.72",
+      "172.30.14.63",
+      "172.30.14.64",
+      "172.30.14.65",
+      "172.30.14.66",
+      "172.30.14.67",
+      "172.30.14.68",
+      "172.30.14.69",
+      "172.30.14.70",
+      "172.30.14.71"
+    ],
+    "kafka": {
+      "broker": "172.26.134.33:9093,172.26.134.34:9093,172.26.134.35:9093",
+      "topic": "KNT.LAB.P.DATA.TESTINFO.NOC2CH",
+      "type_id_loading": "3",
+      "type_id_sitespeed": "4"
+    },
+    "sql": {
+      "username": "user_l2",
+      "pwd": "SicuroEmort0",
+      "server": "tor1coldb.lan"
+    },
+    "terminal": {
+      "user_term": "administrator",
+      "psw_term": "Admin4Jup!"
+    },
+    "log": "/../../logs",
+    "repository": "/../../repository"
+  },
+  "create_baseline": {
+    "sql": {
+      "username": "user_l2",
+      "pwd": "SicuroEmort0",
+      "server": "tor1coldb.lan",
+      "initial_date": "2022/02/20 00:00:00",
+      "final_date": "2022/03/14 00:00:00",
+      "devices": [
+        [
+          "hm",
+          107,
+          "prod"
+        ],
+        [
+          "hm",
+          110,
+          "prod"
+        ],
+        [
+          "hm",
+          113,
+          "prod"
+        ],
+        [
+          "hm",
+          114,
+          "prod"
+        ],
+        [
+          "hm",
+          216,
+          "prod"
+        ]
+      ]
+    },
+    "kafka": {
+      "broker_lab": "172.26.134.33:9093,172.26.134.34:9093,172.26.134.35:9093",
+      "topic_lab": "KNT.LAB.P.DATA.TESTINFO.NOC2CH"
+    },
+    "prod": {
+      "ota": {
+        "217": 1,
+        "216": 1
+      },
+      "hm": {
+        "133": 1,
+        "139": 1,
+        "216": 1,
+        "108": 0,
+        "217": 1,
+        "126": 1
+      }
+    },
+    "lab": {
+      "hm": {
+        "117": 1
+      },
+      "ht": {
+        "117": 0
+      }
+    }
+  },
+  "get_baseline": {
+    "kafka": {
+      "broker_lab": "172.26.134.33:9093,172.26.134.34:9093,172.26.134.35:9093",
+      "topic_lab": "KNT.LAB.P.DATA.TESTINFO.NOC2CH"
+    },
+    "sql": {
+      "username": "user_l2",
+      "pwd": "SicuroEmort0",
+      "server": "tor1coldb.lan",
+      "device": "ota",
+      "beam": 216
+    }
+  }
+}
