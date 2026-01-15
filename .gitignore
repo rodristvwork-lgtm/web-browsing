@@ -1,6 +1,10 @@
+# Drivers
+geckodriver
+geckodriver.exe
 # Ignore Test performance results
 *.txt
 *.zip
+*.csv
 !requirements.txt
 
 # Byte-compiled / optimized / DLL files

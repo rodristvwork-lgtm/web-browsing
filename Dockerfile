@@ -1,5 +1,5 @@
 # Image
-FROM python:slim
+FROM python:3.11-slim-bookworm
 
 # Set container name
 LABEL Name="web-browsing-container"
@@ -14,6 +14,7 @@ RUN	apt-get install -y wget
 RUN	apt-get install -y bash
 RUN	apt-get install -y procps
 RUN	apt-get install -y dos2unix
+RUN apt-get install -y firefox-esr
 
 # Set working directory inside container
 WORKDIR /app
